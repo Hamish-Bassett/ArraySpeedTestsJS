@@ -14,9 +14,12 @@ describe('makeArray', () => {
     ]);
   });
   it('should have only functions as members', () => {
-    const keys = makeArray.keys();
+    const keys = Object.keys(makeArray);
     keys.forEach((element) => {
       expect(makeArray[element]).to.be.a('function');
     });
+  });
+  describe('factories', () => {
+    require('./makeArray/sparse');
   });
 });
