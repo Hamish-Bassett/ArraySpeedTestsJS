@@ -1,0 +1,10 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-tabs": "error",
+    "indent": ["error", 2]
+  }
+}

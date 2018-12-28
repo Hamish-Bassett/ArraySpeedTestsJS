@@ -1,0 +1,28 @@
+{
+  "name": "arrayspeedtestsjs",
+  "version": "1.0.0",
+  "description": "Test various ways of accessing arrays for speed",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamish-Bassett/ArraySpeedTestsJS.git"
+  },
+  "keywords": [
+    "JS",
+    "Meta",
+    "Node"
+  ],
+  "author": "Hamish Bassett",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Hamish-Bassett/ArraySpeedTestsJS/issues"
+  },
+  "homepage": "https://github.com/Hamish-Bassett/ArraySpeedTestsJS#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
