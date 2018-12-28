@@ -6,9 +6,9 @@
  * @returns {array} a sparse array with the key placed randomly in it.
  */
 function sparse(options) {
-  const res = Array(options.length);
+  const res = new Array(options.length);
 
-  res[(Math.round(Math.random()) * options.length)] = options.key;
+  res[(Math.round(Math.random() * options.length))] = options.key;
 
   return res;
 }

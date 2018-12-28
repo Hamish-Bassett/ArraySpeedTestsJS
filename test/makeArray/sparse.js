@@ -6,7 +6,7 @@ const expect = chai.expect;
 
 describe('sparse', () => {
   const key = 'this is the key';
-  const length = Math.round(Math.random() * 1000);
+  const length = Math.trunc(Math.random() * 1000);
   const res = sparse({
     length,
     key,
