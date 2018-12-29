@@ -21,5 +21,6 @@ describe('makeArray', () => {
   });
   describe('factories', () => {
     require('./makeArray/sparse');
+    require('./makeArray/dense');
   });
 });

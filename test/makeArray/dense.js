@@ -1,21 +1,21 @@
 const chai = require('chai');
 
-const sparse = require('../../library/makeArray/dense');
+const dense = require('../../library/makeArray/dense');
 
 const expect = chai.expect;
 
 describe('dense', () => {
   const key = 'this is the key';
   const length = Math.round(Math.random() * 1000);
-  const res = sparse({
+  const res = dense({
     length,
     key,
   });
   it('should be a function', () => {
-    expect(sparse).to.be.a('function');
+    expect(dense).to.be.a('function');
   });
   it('should return an array', () => {
-    expect(sparse({
+    expect(dense({
       length: 1,
     })).to.be.an('array');
   });
@@ -24,7 +24,10 @@ describe('dense', () => {
   });
   it('randomly selected elements should not be null.', () => {
     for (let count = 0; count < 100; count++) {
-      expect(res[Math.round(Math.random(length))]).to.not.be.undefined;      
+      const rand = Math.round(Math.random(length) * length);
+      console.log(`rand is: ${rand}`)
+      console.log(`random element is: ${res[rand]}`);
+      expect(res[rand]).to.not.be.undefined;      
     }
   });
   it('should have the key in it', () => {

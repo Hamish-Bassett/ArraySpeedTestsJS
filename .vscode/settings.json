@@ -1,3 +1,4 @@
 {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "mocha.files.glob": "test/test_*.js"
 }
