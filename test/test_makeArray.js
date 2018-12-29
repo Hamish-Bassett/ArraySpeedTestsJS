@@ -11,6 +11,8 @@ describe('makeArray', () => {
   it('should include a list of our various constructors', () => {
     expect(makeArray).to.have.keys([
       'sparse',
+      'dense',
+      'semisparse',
     ]);
   });
   it('should have only functions as members', () => {
@@ -22,5 +24,6 @@ describe('makeArray', () => {
   describe('factories', () => {
     require('./makeArray/sparse');
     require('./makeArray/dense');
+    require('./makeArray/semisparse')
   });
 });
