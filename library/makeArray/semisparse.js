@@ -3,7 +3,7 @@
  * @param  {object} options
  * @param  {any} options.key the key to be found 
  * @param  {number} options.length the length of the array to be built
- * @param  {number} option.spacing  the number of elements between the elements in the array.
+ * @param  {number} option.spacing  the number of elements between the elements in the array.g
  * @returns {array} an array containing key, which only has keys as dense as e
  */
 function dense(options) {

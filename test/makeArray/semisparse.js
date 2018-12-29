@@ -7,9 +7,11 @@ const expect = chai.expect;
 describe('semisparse', () => {
   const key = 'this is the key';
   const length = Math.round(Math.random() * 1000);
+  const spacing = 10;
   const res = semisparse({
     length,
     key,
+    spacing,
   });
   it('should be a function', () => {
     expect(semisparse).to.be.a('function');
