@@ -1,4 +1,5 @@
 {
     "editor.tabSize": 2,
-    "mocha.files.glob": "test/test_*.js"
+    "mocha.files.glob": "test/test_*.js",
+    "mocha.enabled": true
 }
