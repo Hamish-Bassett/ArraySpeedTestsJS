@@ -24,7 +24,7 @@ describe('forLoop', () => {
       forLoop();
     }).to.throw();
     expect(()=>{
-      forLoop(undefined ,'foo');
+      forLoop(null ,'foo');
     }).to.throw();
     expect(()=>{
       forLoop(1 ,'foo');
