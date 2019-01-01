@@ -11,10 +11,12 @@ describe('findInArray', () => {
   });
   it('should have predefined keys', () => {
     expect(findInArray).to.have.keys([
-      'forLoop'
+      'forLoop',
+      'arrayMethod'
     ]);
   });
   describe('methods', () => {
     require('./findInArray/forLoop');
+    require('./findInArray/arrayMethod');
   });
 });
